@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear_layout"
+    tools:context=".activities.closet.ClosetFragment">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_gravity="fill"
+            android:layout_marginBottom="@dimen/frame_title_margin">
+            <TextView
+                android:id="@+id/frame_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="@string/frame_title_my_closet"
+                android:textSize="@dimen/title_size"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/laundry_btn"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/laundry"
+                android:textSize="@dimen/title_size_smaller"
+                android:textStyle="bold"
+                android:background="@drawable/button"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+
+            <LinearLayout
+                android:id="@+id/filter_btn"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:paddingStart="@dimen/screen_padding"
+                android:paddingEnd="@dimen/screen_padding"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Filter"
+                    android:textColor="@color/yellow_light"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_filter_tinted"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sign_in_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/ic_add"
+                android:backgroundTint="@color/yellow_light"
+                android:layout_marginStart="@dimen/screen_padding"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/closet_stats_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/ic_chart"
+                android:backgroundTint="@color/yellow_light"
+                android:layout_marginStart="@dimen/screen_padding"
+                />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_clothing_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/screen_padding"/>
+        <TextView
+            android:id="@+id/no_items_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size"/>
+
+</LinearLayout>

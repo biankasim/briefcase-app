@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.swap.UserSwapItemDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/frame_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/swap"
+            android:textSize="@dimen/title_size" />
+
+        <include layout="@layout/horizontal_image_text_layout"
+            android:id="@+id/materials_layout"/>
+        <include layout="@layout/horizontal_image_text_layout"
+            android:id="@+id/price_layout"/>
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/hint_size"
+            android:text="Condition"/>
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/hint_size"
+            android:text="Details\n"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/give_away_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Button"
+            android:text="@string/give_away_clothing_item"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_swap_item_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ButtonRed"
+            android:text="@string/delete_clothing_item"/>
+    </LinearLayout>
+
+</ScrollView>

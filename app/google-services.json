@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "675444101491",
+    "project_id": "bakalarka-93129",
+    "storage_bucket": "bakalarka-93129.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675444101491:android:8bd7b88ccbe637d0343506",
+        "android_client_info": {
+          "package_name": "sk.tuke.bakalarka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675444101491-sgcmvbqr2cspolbmav2arq9aevk1kdrj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sk.tuke.bakalarka",
+            "certificate_hash": "7049f88064df03978a49caa95f514b377ec83a87"
+          }
+        },
+        {
+          "client_id": "675444101491-1ang59lc8tgpkcmgibjhe8rdfg4ns8d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4jk9QqKse3IsTBXGRuUcI-AqEED_N16I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675444101491-1ang59lc8tgpkcmgibjhe8rdfg4ns8d1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

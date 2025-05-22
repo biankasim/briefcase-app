@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_layout"
+    android:orientation="vertical"
+    tools:context=".activities.swap.SwapFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_gravity="fill"
+            android:layout_marginBottom="@dimen/frame_title_margin">
+            <TextView
+                android:id="@+id/frame_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="@string/swap"
+                android:textSize="@dimen/title_size"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/my_swap_items"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="My Items"
+                android:textSize="@dimen/title_size_smaller"
+                android:textStyle="bold"
+                android:background="@drawable/button"/>
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_swap_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/no_items_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size"/>
+
+
+</LinearLayout>

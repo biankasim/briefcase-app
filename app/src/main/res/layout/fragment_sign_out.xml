@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".activities.settings.auth.SignOutFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/title_size"
+            android:layout_marginBottom="@dimen/title_size"
+            android:text="@string/settings"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Button"
+        android:background="@drawable/button"
+        android:text="@string/sign_out"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/change_prefs_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonInverse"
+        android:background="@drawable/button_inverse"
+        android:text="@string/change_preferences"/>
+
+</LinearLayout>

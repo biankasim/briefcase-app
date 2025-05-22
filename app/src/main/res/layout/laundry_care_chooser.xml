@@ -1,0 +1,420 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title_washing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Washing"
+        android:textSize="@dimen/title_size_smaller"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/washing_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <RadioButton
+            android:id="@+id/washing_hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_washing_hand"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_washing_hand" />
+
+        <RadioButton
+            android:id="@+id/washing_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_washing_no"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_washing_no"/>
+        <RadioButton
+            android:id="@+id/washing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_washing"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_washing"/>
+
+        <RadioButton
+            android:id="@+id/washing_gentle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_washing_gentle"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_washing_gentle" />
+
+        <RadioButton
+            android:id="@+id/washing_gentle_very"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_washing_gentle_very"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_washing_gentle_very" />
+        <RadioButton
+            android:id="@+id/washing_temp_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_washing_temp_low"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_washing_temp_low" />
+
+        <RadioButton
+            android:id="@+id/washing_temp_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_washing_temp_medium"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_washing_temp_medium" />
+
+        <RadioButton
+            android:id="@+id/washing_temp_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_washing_temp_high"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_washing_temp_high" />
+
+        <RadioButton
+            android:id="@+id/washing_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_washing_30"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_washing_30"/>
+
+        <RadioButton
+            android:id="@+id/washing_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_washing_40"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_washing_40"/>
+
+        <RadioButton
+            android:id="@+id/washing_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_washing_60"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_washing_60"/>
+    </RadioGroup>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/title_bleaching"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bleaching"
+        android:textSize="@dimen/title_size_smaller" />
+
+    <RadioGroup
+        android:id="@+id/bleaching_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_bleaching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/care_bleach"
+            android:contentDescription="@string/care_bleach"
+            android:background="@drawable/radio_selector"/>
+
+        <RadioButton
+            android:id="@+id/radio_bleaching_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/care_bleach_no"
+            android:contentDescription="@string/care_bleach_no"
+            android:background="@drawable/radio_selector" />
+
+        <RadioButton
+            android:id="@+id/radio_bleaching_non_chlorine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/care_bleach_non_clorine"
+            android:contentDescription="@string/care_bleach_non_clorine"
+            android:background="@drawable/radio_selector"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/title_tumble_dry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tumble Drying"
+        android:textSize="@dimen/title_size_smaller" />
+
+    <RadioGroup
+        android:id="@+id/tumble_dry_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_tumble_dry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_tumble_dry"
+            android:button="@drawable/care_tumble_dry"/>
+
+        <RadioButton
+            android:id="@+id/radio_tumble_dry_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_tumble_dry_no"
+            android:button="@drawable/care_tumble_dry_no" />
+
+        <RadioButton
+            android:id="@+id/radio_tumble_dry_no_heat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_tumble_dry_no_heat"
+            android:button="@drawable/care_tumble_dry_no_heat" />
+
+        <RadioButton
+            android:id="@+id/radio_tumble_dry_low_heat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_tumble_dry_low_heat"
+            android:button="@drawable/care_tumble_dry_low_heat" />
+
+        <RadioButton
+            android:id="@+id/radio_tumble_dry_medium_heat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_tumble_dry_medium_heat"
+            android:button="@drawable/care_tumble_dry_medium_heat"/>
+
+        <RadioButton
+            android:id="@+id/radio_tumble_dry_high_heat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_tumble_dry_high_heat"
+            android:button="@drawable/care_tumble_dry_high_heat" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/title_ironing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ironing"
+        android:textSize="@dimen/title_size_smaller"/>
+    <RadioGroup
+        android:id="@+id/ironing_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_ironing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/care_ironing"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_ironing"/>
+
+        <RadioButton
+            android:id="@+id/radio_ironing_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/care_ironing_no"
+            android:contentDescription="@string/care_ironing_no"
+            android:background="@drawable/radio_selector"/>
+
+        <RadioButton
+            android:id="@+id/radio_ironing_temp_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/care_ironing_temp_low"
+            android:contentDescription="@string/care_ironing_temp_low"
+            android:background="@drawable/radio_selector" />
+
+        <RadioButton
+            android:id="@+id/radio_ironing_temp_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/care_ironing_temp_medium"
+            android:contentDescription="@string/care_ironing_temp_medium"
+            android:background="@drawable/radio_selector"/>
+
+        <RadioButton
+            android:id="@+id/radio_ironing_temp_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_ironing_temp_high"
+            android:button="@drawable/care_ironing_temp_high"
+            android:background="@drawable/radio_selector" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/title_dry_cleaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dry Cleaning"
+        android:textSize="@dimen/title_size_smaller"/>
+
+    <RadioGroup
+        android:id="@+id/dry_cleaning_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_dry_cleaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_dry_clean"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_dry_clean" />
+
+        <RadioButton
+            android:id="@+id/radio_dry_cleaning_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/care_dry_clean_no"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/care_dry_clean_no" />
+
+    </RadioGroup>
+
+    <!--
+    <TextView
+        android:id="@+id/title_drying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drying"
+        android:textSize="@dimen/title_size_smaller" />
+
+    <RadioGroup
+        android:id="@+id/drying_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/drying_natural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_drying_natural"
+            android:button="@drawable/care_drying_natural" />
+
+        <RadioButton
+            android:id="@+id/drying_shade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_drying_in_shade"
+            android:button="@drawable/care_drying_shade" />
+
+        <RadioButton
+            android:id="@+id/drying_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_drying_line"
+            android:button="@drawable/care_drying_line"/>
+
+        <RadioButton
+            android:id="@+id/drying_drip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_drying_drip"
+            android:button="@drawable/care_drying_drip"/>
+
+        <RadioButton
+            android:id="@+id/radio_drying_flat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_drying_flat"
+            android:button="@drawable/care_drying_flat"/>
+
+        <RadioButton
+            android:id="@+id/radio_drying_flat_shade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_drying_flat_in_shade"
+            android:button="@drawable/care_drying_flat_shade"/>
+
+        <RadioButton
+            android:id="@+id/radio_drying_drip_shade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_drying_drip_shade"
+            android:button="@drawable/care_drying_drip_shade" />
+
+        <RadioButton
+            android:id="@+id/radio_drying_line_shade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/care_drying_line_in_shade"
+            android:button="@drawable/care_drying_line_shade"/>
+
+    </RadioGroup>
+
+
+
+
+
+    <TextView
+    android:id="@+id/title_wring"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Wring"
+    android:textSize="@dimen/title_size_smaller"/>
+
+    <RadioGroup
+    android:id="@+id/wring_group"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/radio_wring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/care_wring"
+        android:contentDescription="@string/care_wring"
+        android:background="@drawable/radio_selector" />
+
+    <RadioButton
+        android:id="@+id/radio_wring_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/care_wring_no"
+        android:contentDescription="@string/care_wring_no"
+        android:background="@drawable/radio_selector"/>
+
+    </RadioGroup>
+
+    -->
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="bottom_navigation_padding">5dp</dimen>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="title_size">32sp</dimen>
+    <dimen name="title_size_smaller">20sp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="hint_size">16sp</dimen>
+    <dimen name="text_view_padding">5dp</dimen>
+    <dimen name="laundry_icon_size">55dp</dimen>
+    <dimen name="frame_title_margin">5dp</dimen>
+
+
+</resources>

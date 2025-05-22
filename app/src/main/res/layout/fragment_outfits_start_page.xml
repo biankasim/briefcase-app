@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.outfits.OutfitsStartPageFragment"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Outfits"
+        android:textSize="@dimen/title_size"
+        android:layout_marginBottom="@dimen/title_size"
+        android:gravity="center_horizontal"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/my_outfits_btn"
+        android:text="@string/frame_title_my_outfits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Button"
+        android:background="@drawable/button"
+        android:layout_marginBottom="@dimen/title_size"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/plan_outfit_btn"
+        android:text="@string/plan_outfit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonInverse"
+        android:background="@drawable/button_inverse"
+        android:layout_marginBottom="@dimen/title_size"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/unplan_outfit_btn"
+        android:text="@string/unplan_outfit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonRed"
+        android:background="@drawable/button_red"/>
+
+
+</LinearLayout>

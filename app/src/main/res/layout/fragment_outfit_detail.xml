@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.outfits.OutfitDetailFragment"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/frame_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frame_title_outfit"
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:id="@+id/worn_times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Worn:"
+            android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/occasion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/occasion"
+                android:textSize="@dimen/text_size" />
+
+
+            <TextView
+                android:id="@+id/season"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/season"
+                android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:id="@+id/outfit_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_clothes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/transparent"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_photo_btn"
+            style="@style/ButtonInverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_photo" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_outfit_btn"
+            style="@style/ButtonRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_outfit" />
+    </LinearLayout>
+
+</ScrollView>

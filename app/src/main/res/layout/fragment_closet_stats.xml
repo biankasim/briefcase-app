@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    tools:context=".activities.closet.ClosetStatsFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/frame_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/closet_statistics"
+            android:textSize="@dimen/title_size" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_view_padding"
+            android:layout_marginTop="@dimen/text_size"
+            android:text="@string/choose_type"
+            android:textSize="@dimen/title_size_smaller" />
+        <Spinner
+            android:id="@+id/type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Spinner"
+            android:entries="@array/type_array" />
+
+
+
+        <TextView
+            android:id="@+id/clothing_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_view_padding"
+            android:layout_marginTop="@dimen/text_size"
+            android:text="@string/clothing_count"
+            android:textSize="@dimen/title_size_smaller" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <TextView
+                android:id="@+id/closet_usage"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/text_view_padding"
+                android:text="@string/closet_usage"
+                android:textSize="@dimen/title_size_smaller" />
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/closet_usage_chart"
+                android:paddingStart="@dimen/screen_padding"
+                android:layout_width="120dp"
+                android:layout_weight="1"
+                android:layout_height="150dp"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/spent_last_month"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/text_view_padding"
+                android:text="@string/money_spent_by_month"
+                android:textSize="@dimen/title_size_smaller" />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/text_view_padding"
+                android:background="@drawable/ic_money"
+                android:backgroundTint="@color/yellow_light"/>
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="@dimen/screen_padding"
+            />
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/median_price"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/text_view_padding"
+                android:text="Median Purchase Price: "
+                android:textSize="@dimen/title_size_smaller" />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/text_view_padding"
+                android:background="@drawable/ic_money"
+                android:backgroundTint="@color/yellow_light"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/closet_worth"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/text_view_padding"
+                android:text="@string/closet_worth"
+                android:textSize="@dimen/title_size_smaller" />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/text_view_padding"
+                android:background="@drawable/ic_sum"
+                android:backgroundTint="@color/yellow_light"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/colors_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_view_padding"
+            android:layout_marginTop="@dimen/text_size"
+            android:text="@string/colors"
+            android:textSize="@dimen/title_size_smaller" />
+        <LinearLayout
+            android:id="@+id/colors_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/most_worn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_view_padding"
+            android:layout_marginTop="@dimen/text_size"
+            android:text="@string/most_worn"
+            android:textSize="@dimen/title_size_smaller" />
+
+        <LinearLayout
+            android:id="@+id/most_worn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/text_container"
+            android:weightSum="3">
+            <ImageView
+                android:id="@+id/image_view_most_1"
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="80dp"/>
+            <ImageView
+                android:id="@+id/image_view_most_2"
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="80dp"/>
+            <ImageView
+                android:id="@+id/image_view_most_3"
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="80dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/least_worn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_view_padding"
+            android:layout_marginTop="@dimen/text_size"
+            android:text="@string/least_worn"
+            android:textSize="@dimen/title_size_smaller" />
+
+        <LinearLayout
+            android:id="@+id/least_worn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:weightSum="3"
+            android:background="@drawable/text_container">
+            <ImageView
+                android:id="@+id/image_view_least_1"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/image_view_least_2"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/image_view_least_3"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,117 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Bakalarka" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/lime</item>
+        <item name="colorSecondary">@color/lime</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/yellow_light</item>
+        <item name="android:textColorHint">@color/yellow_light</item>
+        <item name="android:editTextColor">@color/yellow_light</item>
+        <item name="android:textColorSecondary">@color/yellow_light</item>
+        <item name="android:textColorTertiary">@color/yellow_light</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:itemBackground">@color/primary</item>
+        <item name="android:textViewStyle">@style/TextView</item>
+        <item name="android:switchStyle">@style/SwitchButton</item>
+    </style>
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/primary</item>
+        <item name="itemIconTint">@color/yellow_light</item>
+        <item name="itemActiveIndicatorStyle">@color/blue</item>
+        <item name="itemTextColor">@color/yellow_light</item>
+        <item name="paddingStart">@dimen/bottom_navigation_padding</item>
+        <item name="paddingEnd">@dimen/bottom_navigation_padding</item>
+    </style>
+
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/yellow_light</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+    <style name="ButtonInverse" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@drawable/button_inverse</item>
+    </style>
+
+    <style name="ButtonRed" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/yellow_light</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@drawable/button_red</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:textSize">@dimen/hint_size</item>
+        <item name="android:textColor">@color/yellow_light</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="SwitchButton">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/yellow_light</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:paddingBottom">@dimen/text_view_padding</item>
+        <item name="android:textColor">@color/yellow_light</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="SliderLabel">
+        <item name="android:textColor">@color/yellow_light</item>
+        <item name="android:backgroundTint">@color/primary</item>
+    </style>
+
+    <style name="Tooltip" parent="Widget.MaterialComponents.Tooltip">
+        <item name="android:textAppearance">@style/TextAppearance.Tooltip</item>
+        <item name="backgroundTint">@color/primary</item>
+    </style>
+
+    <style name="TextAppearance.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:textColor">@color/yellow_light</item>
+    </style>
+
+    <style name="RecyclerView">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:shape">@drawable/recycler_view</item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="background">@drawable/spinner_background</item>
+        <item name="android:paddingTop">@dimen/bottom_navigation_padding</item>
+        <item name="android:paddingBottom">@dimen/bottom_navigation_padding</item>
+    </style>
+
+
+    <style name="ThemeOverlay.AppCompat.Dialog" parent="@style/Theme.AppCompat.DayNight.Dialog">
+        <item name="colorAccent">@color/yellow_light</item>
+        <item name="android:textColor">@color/yellow_light</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DialogButtonStyled</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DialogButtonStyled</item>
+    </style>
+    <style name="DialogButtonStyled" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/yellow_light</item>
+    </style>
+
+
+    <style name="DatePickerStyle" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:textColor">@color/yellow_light</item>
+    </style>
+
+
+
+    <style name="Widget.MaterialComponents.MaterialCalendar.Dark" parent="Widget.MaterialComponents.MaterialCalendar">
+        <item name="android:background">@color/primary</item>
+        <item name="android:textColorPrimary">@color/yellow_light</item>
+    </style>
+
+</resources>
